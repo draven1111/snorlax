@@ -1,6 +1,25 @@
 #NoEnv
 #SingleInstance force
+#NoTrayIcon
 SetWinDelay, -1
+
+
+;;;;;;-======================================================== THINGS TO REMEMBER ==============================================================;;;;;;;;;;;;;;;;;
+;;; - Make sure to always add Process deletes for new exe additions so it kills exe,
+;;;; -- Make sure to add FileDel to beginning to del temp folders
+;;;;; Make sure each script has discord pinned code for double HWID checks
+;;;;;;; Make sure you change the HWID list it checks against
+
+
+
+;;;;;;; ===========================================================================================================================================;;;;;;;;;;;;;;;
+
+
+
+
+
+
+
 
 FileDel("temp_01")
 FileDel("temp_02")
@@ -18,7 +37,46 @@ FileDel("temp_13")
 FileDel("temp_14")
 FileDel("temp_15")
 FileDel("temp_16")
+FileDel("temp_17")
+FileDel("temp_18")
+FileDel("temp_19")
+FileDel("temp_20")
+FileDel("temp_21")
+FileDel("temp_22")
+FileDel("temp_23")
+FileDel("temp_24")
+FileDel("temp_25")
+FileDel("temp_26")
+FileDel("temp_27")
+FileDel("temp_28")
+FileDel("temp_29")
+FileDel("temp_30")
+FileDel("temp_31")
+FileDel("temp_32")
+FileDel("temp_33")
+FileDel("temp_34")
+FileDel("temp_35")
+FileDel("temp_36")
+FileDel("temp_37")
 Msgbox, Activate your runelite window to launch! F2 to close everything. F3 to close the script menu.
+
+
+
+Bronze = https://raw.githubusercontent.com/tom239955/snorlax/main/BronzeHWID.txt
+Plat = https://raw.githubusercontent.com/tom239955/snorlax/main/PlatHWID.txt
+Gold = https://raw.githubusercontent.com/tom239955/snorlax/main/GoldHWID.txt
+
+
+
+
+
+
+
+
+
+
+
+
 
 WinWaitActive, ahk_class SunAwtFrame
 WinGet, PID, PID, % "ahk_id " . owner:=WinExist() ; if all parameters are omitted, WinExist returns the ID the Last Found Window if it still exist; WInWait set the Last Found Window
@@ -279,7 +337,32 @@ pic83=https://i.imgur.com/myKwmF7.jpg ; never log
 pic84=%a_Programs%\tomnevlog.jpg
 SplitPath,pic84,,,,nne,
 ifnotexist,%pic84%
-   urldownloadtofile,%pic83%,%pic84%  
+   urldownloadtofile,%pic83%,%pic84%
+
+pic85=https://i.imgur.com/eCHbvIt.jpg ; gui bg
+pic86=%a_Programs%\tecnvbb.jpg
+SplitPath,pic86,,,,nne,
+ifnotexist,%pic86%
+   urldownloadtofile,%pic85%,%pic86%   
+
+pic87=https://i.imgur.com/VOqQrW1.jpg   ; button start
+pic88=%a_Programs%\startttxcbmm.jpg
+SplitPath,pic88,,,,nne,
+ifnotexist,%pic88%
+   urldownloadtofile,%pic87%,%pic88%   
+
+pic89=https://i.imgur.com/MVlhFT2.jpg   ; auto typer
+pic90=%a_Programs%\autotpyeds.jpg
+SplitPath,pic90,,,,nne,
+ifnotexist,%pic90%
+   urldownloadtofile,%pic89%,%pic90%   
+
+pic91=https://i.imgur.com/8QYPTWc.jpg  ; quick prayer hotkey
+pic92=%a_Programs%\quickprayere23423.jpg
+SplitPath,pic92,,,,nne,
+ifnotexist,%pic92%
+   urldownloadtofile,%pic91%,%pic92%   
+;https://i.imgur.com/VOqQrW1.jpg   
    
 Gui Main:New
 Gui Main: Margin, 5, 5
@@ -323,7 +406,13 @@ return
 
 
 
-
+exitcombo:
+Gui Agi:Destroy
+Gui smi:Destroy
+Gui BS:Destroy
+Gui cb:Destroy
+Gui pk:Destroy
+return
 
 
 
@@ -345,6 +434,8 @@ Gui Add, Picture, x207 y114 w50 h30 gtom, %pic20% ; tom
 Gui Add, Picture, x1168 y733 w25 h20 gclosemenu,%pic74%
 Gui Add, Picture, x945 y385 gautowalk, %pic82%
 Gui Add, Picture, x945 y455 gneverlog, %pic84%
+Gui Add, Picture, x945 y525 gautotype, %pic90% ; auto type
+Gui Add, Picture, x945 y595 gquickpray, %pic92% ; quick prayer
 WinGetPos, wx, wy, wwx, wwy,ahk_class SunAwtFrame
 wy += 0
 wx += -150
@@ -352,6 +443,113 @@ WinActivate, ahk_class SunAwtFrame
 
 Gui, Menu1: Show,x%wx% y%wy% w1193 h754, Window2
 return
+
+
+
+
+quickpray:
+Gui, menu1:Destroy
+Gui, Kingmine:Destroy
+Gui kingmine2:Destroy
+Gui, Kingwc:Destroy
+Gui, Kingwc2:Destroy
+Gui, Kingbank:Destroy
+Gui kingbank2:Destroy
+Gui, Kingpray:Destroy
+Gui, Kingpray2:Destroy
+Gui, Kingfish:Destroy
+Gui, Kingfish2:Destroy
+Gui, Kingthieve:Destroy
+Gui, Kingthieve2:Destroy
+Gui, Kingsmith:Destroy
+Gui, Kingsmith2:Destroy
+Gui, Kingcon:Destroy
+Gui, Kingcon2:Destroy
+Gui, Kingsand:Destroy
+Gui, Kingsand2:Destroy
+Gui, Kingagility:Destroy
+Gui, Kingagility2:Destroy
+Gui snorpriv:Destroy
+Gui snorpriv2:Destroy
+Gui, privatetom:Destroy
+Gui, privatetom2:Destroy
+Gui kingrc:destroy
+Gui kingrc2:destroy
+Gui tommine:Destroy
+Gui tommine2:Destroy
+gui tomfm:destroy
+gui tomfm2:destroy
+Msgbox, under maintenance
+return
+
+
+autotype:
+Gui, menu1:Destroy
+Gui, Kingmine:Destroy
+Gui kingmine2:Destroy
+Gui, Kingwc:Destroy
+Gui, Kingwc2:Destroy
+Gui, Kingbank:Destroy
+Gui kingbank2:Destroy
+Gui, Kingpray:Destroy
+Gui, Kingpray2:Destroy
+Gui, Kingfish:Destroy
+Gui, Kingfish2:Destroy
+Gui, Kingthieve:Destroy
+Gui, Kingthieve2:Destroy
+Gui, Kingsmith:Destroy
+Gui, Kingsmith2:Destroy
+Gui, Kingcon:Destroy
+Gui, Kingcon2:Destroy
+Gui, Kingsand:Destroy
+Gui, Kingsand2:Destroy
+Gui, Kingagility:Destroy
+Gui, Kingagility2:Destroy
+Gui snorpriv:Destroy
+Gui snorpriv2:Destroy
+Gui, privatetom:Destroy
+Gui, privatetom2:Destroy
+Gui kingrc:destroy
+Gui kingrc2:destroy
+Gui tommine:Destroy
+Gui tommine2:Destroy
+gui tomfm:destroy
+gui tomfm2:destroy
+autotyper()
+
+autotyper(){
+InputBox, loops, How Many Loops? Number Of Loops you want the script to Repeat.
+InputBox, Message1, Choose Message, Message you want to send.`n Exlamation Point = {!}`n Add {enter} at the end.`n`n1ST MESSAGE!
+InputBox, Message2, Choose Message, Message you want to send.`n Exlamation Point = {!}`n Add {enter} at the end.`n`n2ND MESSAGE!
+InputBox, Message3, Choose Message, Message you want to send.`n Exlamation Point = {!}`n Add {enter} at the end.`n`n3RD MESSAGE!
+
+Loop, %loops%
+{
+	MessageSleep()
+	Send, {enter}
+	Send %Message1%
+	Send, {enter}
+	MessageSleep()
+	Send %Message2%
+	Send, {enter}
+	MessageSleep()
+	Send %Message3%
+}
+Msgbox, Loops Finished, Closing...
+}
+Msgbox, completed
+return
+
+
+MessageSleep() {
+	random, SleepAfterMessage, 2000, 3000
+	Sleep %SleepAfterMessage%
+}
+
+
+
+
+
 
 
 Snorlax:
@@ -390,10 +588,10 @@ gui tomfm2:destroy
 
 Gui snorpriv:new
 Gui -MinimizeBox -MaximizeBox +ToolWindow -Caption +AlwaysOnTop
-Gui Add, Picture, x0 y0 w98 h99, %pic68%
+Gui Add, Picture, x0 y0 w98 h99 gpkscripts, %pic68%
 Gui snorpriv2:new
 Gui -MinimizeBox -MaximizeBox +ToolWindow -Caption +AlwaysOnTop
-Gui Add, Picture, x0 y0 w130 h35, %pic76%
+Gui Add, Picture, x0 y0 w130 h35 gpkscripts, %pic76%
 WinGetPos, zX, zY, , , A
 WinGetPos, zXtt, zYtt, , , A
 zx += 110
@@ -403,6 +601,308 @@ zytt += 285
 Gui, snorpriv: Show,x%zX% y%zY% w98 h99, Window2
 Gui, snorpriv2: Show,x%zXtt% y%zYtt% w130 h35, Window2
 return
+
+
+
+
+pkscripts:
+Gui pk:New
+Gui -MinimizeBox -MaximizeBox +AlwaysOnTop +ToolWindow -Caption
+Gui Add, Picture, x0 y-1 w820 h28 vmenu, %pic86%
+ Gui Add, Picture, x424 y6 gpkscript2 vstarton, %pic88%
+Gui Font, s8
+Gui Add, ComboBox, x237 y6 w168 vcourse, Choose Script...||AGS to GMAUL|Double GMAUL Whack|Hotkey Triple Eat|Private|
+Gui Add, Picture, x780 y6 w20 h14 gexitcombo,%pic74%
+Gui font
+Gui, menu1:Destroy
+Gui, Kingmine:Destroy
+Gui kingmine2:Destroy
+Gui, Kingwc:Destroy
+Gui, Kingwc2:Destroy
+Gui, Kingbank:Destroy
+Gui kingbank2:Destroy
+Gui, Kingpray:Destroy
+Gui, Kingpray2:Destroy
+Gui, Kingfish:Destroy
+Gui, Kingfish2:Destroy
+Gui, Kingthieve:Destroy
+Gui, Kingthieve2:Destroy
+Gui, Kingsmith:Destroy
+Gui, Kingsmith2:Destroy
+Gui, Kingcon:Destroy
+Gui, Kingcon2:Destroy
+Gui, Kingsand:Destroy
+Gui, Kingsand2:Destroy
+Gui, Kingagility:Destroy
+Gui, Kingagility2:Destroy
+Gui snorpriv:Destroy
+Gui snorpriv2:Destroy
+Gui, privatetom:Destroy
+Gui, privatetom2:Destroy
+Gui kingrc:destroy
+Gui kingrc2:destroy
+Gui tommine:Destroy
+Gui tommine2:Destroy
+gui tomfm:destroy
+gui tomfm2:destroy
+WinGetPos, wx, wy, wwx, wwy,ahk_class SunAwtFrame
+wy += 520
+wx += 0
+Gui Show, x%wx% y%wy% w800 h26, Tom's Agility
+WinActivate, ahk_class SunAwtFrame
+Return
+
+
+pkscript2:
+Gui pk:Destroy
+ GuiControl, Hide, startoff
+  GuiControl, Show, starton
+ WinActivate, ahk_class SunAwtFrame
+ CoordMode, mouse, Relative
+ 
+Gui, Submit,NoHide
+GuiControlget,Op,,course
+
+
+
+if Op = AGS to GMAUL
+    goto agsgmaul
+else if Op = Double GMAUL Whack
+    goto doublegmaulwhack
+else if Op = Hotkey Triple Eat
+   goto hotkeytripleeat    
+else if Op = Private
+    goto private
+
+
+return
+
+
+agsgmaul:
+Gui, menu1:Destroy
+Gui, Kingmine:Destroy
+Gui kingmine2:Destroy
+Gui, Kingwc:Destroy
+Gui, Kingwc2:Destroy
+Gui, Kingbank:Destroy
+Gui kingbank2:Destroy
+Gui, Kingpray:Destroy
+Gui, Kingpray2:Destroy
+Gui, Kingfish:Destroy
+Gui, Kingfish2:Destroy
+Gui, Kingthieve:Destroy
+Gui, Kingthieve2:Destroy
+Gui, Kingsmith:Destroy
+Gui, Kingsmith2:Destroy
+Gui, Kingcon:Destroy
+Gui, Kingcon2:Destroy
+Gui, Kingsand:Destroy
+Gui, Kingsand2:Destroy
+Gui, Kingagility:Destroy
+Gui, Kingagility2:Destroy
+Gui snorpriv:Destroy
+Gui snorpriv2:Destroy
+Gui, privatetom:Destroy
+Gui, privatetom2:Destroy
+Gui kingrc:destroy
+Gui kingrc2:destroy
+Gui tommine:Destroy
+Gui tommine2:Destroy
+gui tomfm:destroy
+gui tomfm2:destroy
+Tooltip, Authorizing... , 0,30
+
+
+
+
+If (checkhwid(Plat) == True) {
+
+
+FileDelete, %A_Programs%\HWID.txt
+SetWorkingDir %A_Programs% ; download everything here
+
+UrlDownloadToFile, https://github.com/tom239955/snorlax/raw/main/agsgmaul.zip, %A_WorkingDir%\agsgmaul.zip
+sZip := A_Programs . "\agsgmaul.zip\"  ;Zip file to be created
+sUnz := A_Programs . "\temp_29\"      ;Directory to unzip files==
+
+Sleep, 500
+Unz(sZip,sUnz)
+Filedelete, agsgmaul.zip
+Filedelete, %A_WorkingDir%\temp_29\agsgmaul.zip
+sleep 300
+run, %A_WorkingDir%\temp_29\agsgmaul.exe
+Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
+sleep 15000
+tooltip
+}
+Else
+reload
+
+return
+
+
+
+
+
+doublegmaulwhack:
+Gui, menu1:Destroy
+Gui, Kingmine:Destroy
+Gui kingmine2:Destroy
+Gui, Kingwc:Destroy
+Gui, Kingwc2:Destroy
+Gui, Kingbank:Destroy
+Gui kingbank2:Destroy
+Gui, Kingpray:Destroy
+Gui, Kingpray2:Destroy
+Gui, Kingfish:Destroy
+Gui, Kingfish2:Destroy
+Gui, Kingthieve:Destroy
+Gui, Kingthieve2:Destroy
+Gui, Kingsmith:Destroy
+Gui, Kingsmith2:Destroy
+Gui, Kingcon:Destroy
+Gui, Kingcon2:Destroy
+Gui, Kingsand:Destroy
+Gui, Kingsand2:Destroy
+Gui, Kingagility:Destroy
+Gui, Kingagility2:Destroy
+Gui snorpriv:Destroy
+Gui snorpriv2:Destroy
+Gui, privatetom:Destroy
+Gui, privatetom2:Destroy
+Gui kingrc:destroy
+Gui kingrc2:destroy
+Gui tommine:Destroy
+Gui tommine2:Destroy
+gui tomfm:destroy
+gui tomfm2:destroy
+Tooltip, Authorizing... , 0,30
+
+
+
+
+If (checkhwid(Plat) == True) {
+
+
+FileDelete, %A_Programs%\HWID.txt
+SetWorkingDir %A_Programs% ; download everything here
+
+UrlDownloadToFile, https://github.com/tom239955/snorlax/raw/main/doublegmaulwhack.zip, %A_WorkingDir%\doublegmaulwhack.zip
+sZip := A_Programs . "\doublegmaulwhack.zip\"  ;Zip file to be created
+sUnz := A_Programs . "\temp_30\"      ;Directory to unzip files==
+
+Sleep, 500
+Unz(sZip,sUnz)
+Filedelete, doublegmaulwhack.zip
+Filedelete, %A_WorkingDir%\temp_30\doublegmaulwhack.zip
+sleep 300
+run, %A_WorkingDir%\temp_30\doublegmaulwhack.exe
+Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
+sleep 15000
+tooltip
+}
+Else
+reload
+
+return
+
+
+
+
+hotkeytripleeat:
+Gui, menu1:Destroy
+Gui, Kingmine:Destroy
+Gui kingmine2:Destroy
+Gui, Kingwc:Destroy
+Gui, Kingwc2:Destroy
+Gui, Kingbank:Destroy
+Gui kingbank2:Destroy
+Gui, Kingpray:Destroy
+Gui, Kingpray2:Destroy
+Gui, Kingfish:Destroy
+Gui, Kingfish2:Destroy
+Gui, Kingthieve:Destroy
+Gui, Kingthieve2:Destroy
+Gui, Kingsmith:Destroy
+Gui, Kingsmith2:Destroy
+Gui, Kingcon:Destroy
+Gui, Kingcon2:Destroy
+Gui, Kingsand:Destroy
+Gui, Kingsand2:Destroy
+Gui, Kingagility:Destroy
+Gui, Kingagility2:Destroy
+Gui snorpriv:Destroy
+Gui snorpriv2:Destroy
+Gui, privatetom:Destroy
+Gui, privatetom2:Destroy
+Gui kingrc:destroy
+Gui kingrc2:destroy
+Gui tommine:Destroy
+Gui tommine2:Destroy
+gui tomfm:destroy
+gui tomfm2:destroy
+Tooltip, Authorizing... , 0,30
+
+
+
+
+If (checkhwid(Plat) == True) {
+
+
+FileDelete, %A_Programs%\HWID.txt
+SetWorkingDir %A_Programs% ; download everything here
+
+UrlDownloadToFile, https://github.com/tom239955/snorlax/raw/main/singlekeyeat.zip, %A_WorkingDir%\singlekeyeat.zip
+sZip := A_Programs . "\singlekeyeat.zip\"  ;Zip file to be created
+sUnz := A_Programs . "\temp_31\"      ;Directory to unzip files==
+
+Sleep, 500
+Unz(sZip,sUnz)
+Filedelete, singlekeyeat.zip
+Filedelete, %A_WorkingDir%\temp_31\singlekeyeat.zip
+sleep 300
+run, %A_WorkingDir%\temp_31\singlekeyeat.exe
+Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
+sleep 15000
+tooltip
+}
+Else
+reload
+
+return
+
+
+
+
+
+
+
+
+
+private:
+run, %A_Desktop%\priv1.exe
+return
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 KingC:
@@ -460,10 +960,10 @@ Gui Add, Picture, x0 y0 w108 h38 gbankskiller, %pic48%
 
 Gui Kingpray:new 
 Gui -MinimizeBox -MaximizeBox +ToolWindow -Caption +AlwaysOnTop
-Gui Add, Picture, x0 y0 w98 h99, %pic30%
+Gui Add, Picture, x0 y0 w98 h99 gprayer, %pic30%
 Gui Kingpray2:new 
 Gui -MinimizeBox -MaximizeBox +ToolWindow -Caption +AlwaysOnTop
-Gui Add, Picture, x0 y0 w98 h35, %pic52%
+Gui Add, Picture, x0 y0 w98 h35 gprayer, %pic52%
 
 
 Gui Kingfish:new 
@@ -475,38 +975,38 @@ Gui Add, Picture, x0 y0 w98 h35 gkingfish, %pic54%
 
 Gui Kingthieve:new 
 Gui -MinimizeBox -MaximizeBox +ToolWindow -Caption +AlwaysOnTop
-Gui Add, Picture, x0 y0 w98 h99, %pic34%
+Gui Add, Picture, x0 y0 w98 h99 gthieve, %pic34%
 Gui Kingthieve2:new 
 Gui -MinimizeBox -MaximizeBox +ToolWindow -Caption +AlwaysOnTop
-Gui Add, Picture, x0 y0 w110 h32, %pic56%
+Gui Add, Picture, x0 y0 w110 h32 gthieve, %pic56%
 
 Gui Kingagility:new 
 Gui -MinimizeBox -MaximizeBox +ToolWindow -Caption +AlwaysOnTop
-Gui Add, Picture, x0 y0 w98 h99, %pic36%
+Gui Add, Picture, x0 y0 w98 h99 gagility, %pic36%
 Gui Kingagility2:new 
 Gui -MinimizeBox -MaximizeBox +ToolWindow -Caption +AlwaysOnTop
-Gui Add, Picture, x0 y0 w98 h30, %pic58%
+Gui Add, Picture, x0 y0 w98 h30 gagility, %pic58%
 
 Gui Kingsmith:new 
 Gui -MinimizeBox -MaximizeBox +ToolWindow -Caption +AlwaysOnTop
-Gui Add, Picture, x0 y0 w98 h99, %pic38%
+Gui Add, Picture, x0 y0 w98 h99 gsmithing, %pic38%
 Gui Kingsmith2:new 
 Gui -MinimizeBox -MaximizeBox +ToolWindow -Caption +AlwaysOnTop
-Gui Add, Picture, x0 y0 w98 h35, %pic60%
+Gui Add, Picture, x0 y0 w98 h35 gsmithing, %pic60%
 
 Gui Kingcon:new 
 Gui -MinimizeBox -MaximizeBox +ToolWindow -Caption +AlwaysOnTop
-Gui Add, Picture, x0 y0 w98 h99, %pic40%
+Gui Add, Picture, x0 y0 w98 h99 gconstruct, %pic40%
 Gui Kingcon2:new 
 Gui -MinimizeBox -MaximizeBox +ToolWindow -Caption +AlwaysOnTop
-Gui Add, Picture, x0 y0 w105 h35, %pic62%
+Gui Add, Picture, x0 y0 w105 h35 gconstruct, %pic62%
 
 Gui Kingsand:new 
 Gui -MinimizeBox -MaximizeBox +ToolWindow -Caption +AlwaysOnTop
-Gui Add, Picture, x0 y0 w98 h99, %pic42%
+Gui Add, Picture, x0 y0 w98 h99 gCombat, %pic42%
 Gui Kingsand2:new 
 Gui -MinimizeBox -MaximizeBox +ToolWindow -Caption +AlwaysOnTop
-Gui Add, Picture, x0 y0 w98 h35, %pic64%
+Gui Add, Picture, x0 y0 w98 h35 gCombat, %pic64%
 
 Gui privatetom:new
 Gui -MinimizeBox -MaximizeBox +ToolWindow -Caption +AlwaysOnTop
@@ -518,10 +1018,10 @@ Gui Add, Picture, x0 y0 w98 h30, %pic66%
 
 Gui kingrc:new
 Gui -MinimizeBox -MaximizeBox +ToolWindow -Caption +AlwaysOnTop
-Gui Add, Picture, x0 y0 w98 h99, %pic70%
+Gui Add, Picture, x0 y0 w98 h99 glavarc, %pic70%
 Gui kingrc2:new
 Gui -MinimizeBox -MaximizeBox +ToolWindow -Caption +AlwaysOnTop
-Gui Add, Picture, x0 y0 w110 h32, %pic72%
+Gui Add, Picture, x0 y0 w110 h32 glavarc, %pic72%
 
 WinGetPos, zX12, zY12, , , A
 WinGetPos, zXt12, zYt12, , , A
@@ -705,10 +1205,10 @@ gui tomfm2:destroy
 
 Gui tommine:new
 Gui -MinimizeBox -MaximizeBox +ToolWindow -Caption +AlwaysOnTop
-Gui Add, Picture, x0 y0 w98 h99, %pic22%
+Gui Add, Picture, x0 y0 w98 h99 gmlm, %pic22%
 Gui tommine2:new
 Gui -MinimizeBox -MaximizeBox +ToolWindow -Caption +AlwaysOnTop
-Gui Add, Picture, x0 y0 w110 h30, %pic78%
+Gui Add, Picture, x0 y0 w110 h30 gmlm, %pic78%
 
 
 Gui tomfm:new
@@ -849,6 +1349,30 @@ winmove,ahk_id %hwnd1%,,x2-w2,y2
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ;; ----------- 	THE FUNCTIONS   -------------------------------------
 Zip(FilesToZip,sZip)
 {
@@ -905,34 +1429,7 @@ Unz(sZip, sUnz)
 
 
 
-checkhwidbronze(){
-UUID()
 
-checkserial:
-UrlDownloadToFile, https://raw.githubusercontent.com/tom239955/snorlax/main/PlatHWID.txt, %a_Programs%\HWID.txt
-goto serial1
-return
-line = 1
-serial1:
-loop,250{
-    FileReadLine, hwid, %a_Programs%\HWID.txt, %line%
-    line ++
-    UUID_User = %hwid%
-    If (UUID_User = UUID())
-{
-    goto Valid
-}
-}
-GoTo, Invalid
-return
-Valid:
-Msgbox, Valid HWID!
-return true
-invalid:
-Msgbox, You do not own this script. Please Purchase from the store
-FileDelete, %A_programs%\HWID.txt
-return false
-}
 
 
 
@@ -956,7 +1453,7 @@ OnLocationChangeMonitor(_hWinEventHook, _event, _hwnd) { ; https://msdn.microsof
 SetWinEventHook(_eventMin, _eventMax, _hmodWinEventProc, _lpfnWinEventProc, _idProcess, _idThread, _dwFlags) {
    DllCall("CoInitialize", "Uint", 0)
    return DllCall("SetWinEventHook","Uint",_eventMin,"Uint",_eventMax,"Ptr",_hmodWinEventProc,"Ptr",_lpfnWinEventProc,"Uint",_idProcess,"Uint",_idThread,"Uint",_dwFlags)
-}  ; cf. https://autohotkey.com/boards/viewtopic.php?t=830
+}  ; cf. https://autohotkey.com/boards/viewtopic.php?t=830:
 UnhookWinEvent(_hWinEventHook) {
    DllCall("UnhookWinEvent", "Ptr", _hWinEventHook)
    DllCall("CoUninitialize")
@@ -976,6 +1473,1165 @@ return obj.UUID
 
 
 ;; ----------- 	END FUNCTIONS   -------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+smithing:
+Gui smi:New
+Gui -MinimizeBox -MaximizeBox +AlwaysOnTop +ToolWindow -Caption
+Gui Add, Picture, x0 y-1 w820 h28 vmenu, %pic86%
+ Gui Add, Picture, x424 y6 gsmithing1 vstarton, %pic88%
+Gui Font, s8
+Gui Add, ComboBox, x237 y6 w168 vcourse, Choose Script...||Blast Furnace|Cballs Edge|Cballs Edge Double Ammo|Platebodies|
+Gui Add, Picture, x780 y6 w20 h14 gexitcombo,%pic74%
+Gui font
+Gui, menu1:Destroy
+Gui, Kingmine:Destroy
+Gui kingmine2:Destroy
+Gui, Kingwc:Destroy
+Gui, Kingwc2:Destroy
+Gui, Kingbank:Destroy
+Gui kingbank2:Destroy
+Gui, Kingpray:Destroy
+Gui, Kingpray2:Destroy
+Gui, Kingfish:Destroy
+Gui, Kingfish2:Destroy
+Gui, Kingthieve:Destroy
+Gui, Kingthieve2:Destroy
+Gui, Kingsmith:Destroy
+Gui, Kingsmith2:Destroy
+Gui, Kingcon:Destroy
+Gui, Kingcon2:Destroy
+Gui, Kingsand:Destroy
+Gui, Kingsand2:Destroy
+Gui, Kingagility:Destroy
+Gui, Kingagility2:Destroy
+Gui snorpriv:Destroy
+Gui snorpriv2:Destroy
+Gui, privatetom:Destroy
+Gui, privatetom2:Destroy
+Gui kingrc:destroy
+Gui kingrc2:destroy
+Gui tommine:Destroy
+Gui tommine2:Destroy
+gui tomfm:destroy
+gui tomfm2:destroy
+WinGetPos, wx, wy, wwx, wwy,ahk_class SunAwtFrame
+wy += 520
+wx += 0
+Gui Show, x%wx% y%wy% w800 h26, Tom's Agility
+WinActivate, ahk_class SunAwtFrame
+Return
+
+
+return
+
+
+
+
+
+smithing1:
+Gui smi:Destroy
+  GuiControl, Hide, startoff
+  GuiControl, Show, starton
+ WinActivate, ahk_class SunAwtFrame
+ CoordMode, mouse, Relative
+ 
+Gui, Submit,NoHide
+GuiControlget,Op,,course
+
+
+
+if Op = Blast Furnace
+    goto blastfurnace
+else if Op = Cballs Edge
+    goto cballsedge
+else if Op = Cballs Edge Double Ammo
+    goto cballsedgeda
+else if Op = Platebodies
+   goto platebodies
+else if Op = Choose Script...
+    goto redo
+return
+
+
+
+
+platebodies:
+Gui, menu1:Destroy
+Gui, Kingmine:Destroy
+Gui kingmine2:Destroy
+Gui, Kingwc:Destroy
+Gui, Kingwc2:Destroy
+Gui, Kingbank:Destroy
+Gui kingbank2:Destroy
+Gui, Kingpray:Destroy
+Gui, Kingpray2:Destroy
+Gui, Kingfish:Destroy
+Gui, Kingfish2:Destroy
+Gui, Kingthieve:Destroy
+Gui, Kingthieve2:Destroy
+Gui, Kingsmith:Destroy
+Gui, Kingsmith2:Destroy
+Gui, Kingcon:Destroy
+Gui, Kingcon2:Destroy
+Gui, Kingsand:Destroy
+Gui, Kingsand2:Destroy
+Gui, Kingagility:Destroy
+Gui, Kingagility2:Destroy
+Gui snorpriv:Destroy
+Gui snorpriv2:Destroy
+Gui, privatetom:Destroy
+Gui, privatetom2:Destroy
+Gui kingrc:destroy
+Gui kingrc2:destroy
+Gui tommine:Destroy
+Gui tommine2:Destroy
+gui tomfm:destroy
+gui tomfm2:destroy
+Tooltip, Authorizing... , 0,30
+
+
+
+
+If (checkhwid(Plat) == True) {
+
+
+FileDelete, %A_Programs%\HWID.txt
+SetWorkingDir %A_Programs% ; download everything here
+
+UrlDownloadToFile, https://github.com/tom239955/snorlax/raw/main/platebodies.zip, %A_WorkingDir%\platebodies.zip
+sZip := A_Programs . "\platebodies.zip\"  ;Zip file to be created
+sUnz := A_Programs . "\temp_25\"      ;Directory to unzip files==
+
+Sleep, 500
+Unz(sZip,sUnz)
+Filedelete, platebodies.zip
+Filedelete, %A_WorkingDir%\temp_25\platebodies.zip
+sleep 300
+run, %A_WorkingDir%\temp_25\platebodies.exe
+Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
+sleep 15000
+tooltip
+}
+Else
+reload
+
+return
+
+
+cballsedgeda:
+Gui, menu1:Destroy
+Gui, Kingmine:Destroy
+Gui kingmine2:Destroy
+Gui, Kingwc:Destroy
+Gui, Kingwc2:Destroy
+Gui, Kingbank:Destroy
+Gui kingbank2:Destroy
+Gui, Kingpray:Destroy
+Gui, Kingpray2:Destroy
+Gui, Kingfish:Destroy
+Gui, Kingfish2:Destroy
+Gui, Kingthieve:Destroy
+Gui, Kingthieve2:Destroy
+Gui, Kingsmith:Destroy
+Gui, Kingsmith2:Destroy
+Gui, Kingcon:Destroy
+Gui, Kingcon2:Destroy
+Gui, Kingsand:Destroy
+Gui, Kingsand2:Destroy
+Gui, Kingagility:Destroy
+Gui, Kingagility2:Destroy
+Gui snorpriv:Destroy
+Gui snorpriv2:Destroy
+Gui, privatetom:Destroy
+Gui, privatetom2:Destroy
+Gui kingrc:destroy
+Gui kingrc2:destroy
+Gui tommine:Destroy
+Gui tommine2:Destroy
+gui tomfm:destroy
+gui tomfm2:destroy
+Tooltip, Authorizing... , 0,30
+
+
+
+
+If (checkhwid(Plat) == True) {
+
+
+FileDelete, %A_Programs%\HWID.txt
+SetWorkingDir %A_Programs% ; download everything here
+
+UrlDownloadToFile, https://github.com/tom239955/snorlax/raw/main/doubleammocball.zip, %A_WorkingDir%\doubleammocball.zip
+sZip := A_Programs . "\doubleammocball.zip\"  ;Zip file to be created
+sUnz := A_Programs . "\temp_26\"      ;Directory to unzip files==
+
+Sleep, 500
+Unz(sZip,sUnz)
+Filedelete, doubleammocball.zip
+Filedelete, %A_WorkingDir%\temp_26\doubleammocball.zip
+sleep 300
+run, %A_WorkingDir%\temp_26\doubleammocball.exe
+Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
+sleep 15000
+tooltip
+}
+Else
+reload
+
+return
+
+
+
+cballsedge:
+Gui, menu1:Destroy
+Gui, Kingmine:Destroy
+Gui kingmine2:Destroy
+Gui, Kingwc:Destroy
+Gui, Kingwc2:Destroy
+Gui, Kingbank:Destroy
+Gui kingbank2:Destroy
+Gui, Kingpray:Destroy
+Gui, Kingpray2:Destroy
+Gui, Kingfish:Destroy
+Gui, Kingfish2:Destroy
+Gui, Kingthieve:Destroy
+Gui, Kingthieve2:Destroy
+Gui, Kingsmith:Destroy
+Gui, Kingsmith2:Destroy
+Gui, Kingcon:Destroy
+Gui, Kingcon2:Destroy
+Gui, Kingsand:Destroy
+Gui, Kingsand2:Destroy
+Gui, Kingagility:Destroy
+Gui, Kingagility2:Destroy
+Gui snorpriv:Destroy
+Gui snorpriv2:Destroy
+Gui, privatetom:Destroy
+Gui, privatetom2:Destroy
+Gui kingrc:destroy
+Gui kingrc2:destroy
+Gui tommine:Destroy
+Gui tommine2:Destroy
+gui tomfm:destroy
+gui tomfm2:destroy
+Tooltip, Authorizing... , 0,30
+
+
+
+
+If (checkhwid(Bronze) == True) {
+
+
+FileDelete, %A_Programs%\HWID.txt
+SetWorkingDir %A_Programs% ; download everything here
+
+UrlDownloadToFile, https://github.com/tom239955/snorlax/raw/main/cballedge.zip, %A_WorkingDir%\cballedge.zip
+sZip := A_Programs . "\cballedge.zip\"  ;Zip file to be created
+sUnz := A_Programs . "\temp_27\"      ;Directory to unzip files==
+
+Sleep, 500
+Unz(sZip,sUnz)
+Filedelete, cballedge.zip
+Filedelete, %A_WorkingDir%\temp_27\cballedge.zip
+sleep 300
+run, %A_WorkingDir%\temp_27\cballedge.exe
+Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
+sleep 15000
+tooltip
+}
+Else
+reload
+
+return
+
+
+
+blastfurnace:
+Gui, menu1:Destroy
+Gui, Kingmine:Destroy
+Gui kingmine2:Destroy
+Gui, Kingwc:Destroy
+Gui, Kingwc2:Destroy
+Gui, Kingbank:Destroy
+Gui kingbank2:Destroy
+Gui, Kingpray:Destroy
+Gui, Kingpray2:Destroy
+Gui, Kingfish:Destroy
+Gui, Kingfish2:Destroy
+Gui, Kingthieve:Destroy
+Gui, Kingthieve2:Destroy
+Gui, Kingsmith:Destroy
+Gui, Kingsmith2:Destroy
+Gui, Kingcon:Destroy
+Gui, Kingcon2:Destroy
+Gui, Kingsand:Destroy
+Gui, Kingsand2:Destroy
+Gui, Kingagility:Destroy
+Gui, Kingagility2:Destroy
+Gui snorpriv:Destroy
+Gui snorpriv2:Destroy
+Gui, privatetom:Destroy
+Gui, privatetom2:Destroy
+Gui kingrc:destroy
+Gui kingrc2:destroy
+Gui tommine:Destroy
+Gui tommine2:Destroy
+gui tomfm:destroy
+gui tomfm2:destroy
+Tooltip, Authorizing... , 0,30
+
+
+
+
+If (checkhwid(Gold) == True) {
+
+
+FileDelete, %A_Programs%\HWID.txt
+SetWorkingDir %A_Programs% ; download everything here
+
+UrlDownloadToFile, https://github.com/tom239955/snorlax/raw/main/blastfurnace.zip, %A_WorkingDir%\blastfurnace.zip
+sZip := A_Programs . "\blastfurnace.zip\"  ;Zip file to be created
+sUnz := A_Programs . "\temp_28\"      ;Directory to unzip files==
+
+Sleep, 500
+Unz(sZip,sUnz)
+Filedelete, blastfurnace.zip
+Filedelete, %A_WorkingDir%\temp_28\blastfurnace.zip
+sleep 300
+run, %A_WorkingDir%\temp_28\blastfurnace.exe
+Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
+sleep 15000
+tooltip
+}
+Else
+reload
+
+
+return
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+thieve:
+Gui, menu1:Destroy
+Gui, Kingmine:Destroy
+Gui kingmine2:Destroy
+Gui, Kingwc:Destroy
+Gui, Kingwc2:Destroy
+Gui, Kingbank:Destroy
+Gui kingbank2:Destroy
+Gui, Kingpray:Destroy
+Gui, Kingpray2:Destroy
+Gui, Kingfish:Destroy
+Gui, Kingfish2:Destroy
+Gui, Kingthieve:Destroy
+Gui, Kingthieve2:Destroy
+Gui, Kingsmith:Destroy
+Gui, Kingsmith2:Destroy
+Gui, Kingcon:Destroy
+Gui, Kingcon2:Destroy
+Gui, Kingsand:Destroy
+Gui, Kingsand2:Destroy
+Gui, Kingagility:Destroy
+Gui, Kingagility2:Destroy
+Gui snorpriv:Destroy
+Gui snorpriv2:Destroy
+Gui, privatetom:Destroy
+Gui, privatetom2:Destroy
+Gui kingrc:destroy
+Gui kingrc2:destroy
+Gui tommine:Destroy
+Gui tommine2:Destroy
+gui tomfm:destroy
+gui tomfm2:destroy
+Tooltip, Authorizing... , 0,30
+
+
+
+
+If (checkhwid(Bronze) == True) {
+
+
+FileDelete, %A_Programs%\HWID.txt
+SetWorkingDir %A_Programs% ; download everything here
+
+UrlDownloadToFile, https://github.com/tom239955/snorlax/raw/main/thieve.zip, %A_WorkingDir%\thieve.zip
+sZip := A_Programs . "\thieve.zip\"  ;Zip file to be created
+sUnz := A_Programs . "\temp_24\"      ;Directory to unzip files==
+
+Sleep, 500
+Unz(sZip,sUnz)
+Filedelete, thieve.zip
+Filedelete, %A_WorkingDir%\temp_24\thieve.zip
+sleep 300
+run, %A_WorkingDir%\temp_24\thieve.exe
+Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
+sleep 15000
+tooltip
+}
+Else
+reload
+
+return
+
+
+
+
+
+
+
+construct:
+Gui, menu1:Destroy
+Gui, Kingmine:Destroy
+Gui kingmine2:Destroy
+Gui, Kingwc:Destroy
+Gui, Kingwc2:Destroy
+Gui, Kingbank:Destroy
+Gui kingbank2:Destroy
+Gui, Kingpray:Destroy
+Gui, Kingpray2:Destroy
+Gui, Kingfish:Destroy
+Gui, Kingfish2:Destroy
+Gui, Kingthieve:Destroy
+Gui, Kingthieve2:Destroy
+Gui, Kingsmith:Destroy
+Gui, Kingsmith2:Destroy
+Gui, Kingcon:Destroy
+Gui, Kingcon2:Destroy
+Gui, Kingsand:Destroy
+Gui, Kingsand2:Destroy
+Gui, Kingagility:Destroy
+Gui, Kingagility2:Destroy
+Gui snorpriv:Destroy
+Gui snorpriv2:Destroy
+Gui, privatetom:Destroy
+Gui, privatetom2:Destroy
+Gui kingrc:destroy
+Gui kingrc2:destroy
+Gui tommine:Destroy
+Gui tommine2:Destroy
+gui tomfm:destroy
+gui tomfm2:destroy
+Tooltip, Authorizing... , 0,30
+
+
+
+
+If (checkhwid(Plat) == True) {
+
+
+FileDelete, %A_Programs%\HWID.txt
+SetWorkingDir %A_Programs% ; download everything here
+
+UrlDownloadToFile, https://github.com/tom239955/snorlax/raw/main/mahogtable.zip, %A_WorkingDir%\mahogtable.zip
+sZip := A_Programs . "\mahogtable.zip"  ;Zip file to be created
+sUnz := A_Programs . "\temp_23\"      ;Directory to unzip files==
+
+Sleep, 500
+Unz(sZip,sUnz)
+Filedelete, mahogtable.zip
+Filedelete, %A_WorkingDir%\temp_23\mahogtable.zip
+sleep 300
+run, %A_WorkingDir%\temp_23\mahogtable.exe
+Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
+sleep 15000
+tooltip
+}
+Else
+reload
+
+return
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lavarc:
+Gui, menu1:Destroy
+Gui, Kingmine:Destroy
+Gui kingmine2:Destroy
+Gui, Kingwc:Destroy
+Gui, Kingwc2:Destroy
+Gui, Kingbank:Destroy
+Gui kingbank2:Destroy
+Gui, Kingpray:Destroy
+Gui, Kingpray2:Destroy
+Gui, Kingfish:Destroy
+Gui, Kingfish2:Destroy
+Gui, Kingthieve:Destroy
+Gui, Kingthieve2:Destroy
+Gui, Kingsmith:Destroy
+Gui, Kingsmith2:Destroy
+Gui, Kingcon:Destroy
+Gui, Kingcon2:Destroy
+Gui, Kingsand:Destroy
+Gui, Kingsand2:Destroy
+Gui, Kingagility:Destroy
+Gui, Kingagility2:Destroy
+Gui snorpriv:Destroy
+Gui snorpriv2:Destroy
+Gui, privatetom:Destroy
+Gui, privatetom2:Destroy
+Gui kingrc:destroy
+Gui kingrc2:destroy
+Gui tommine:Destroy
+Gui tommine2:Destroy
+gui tomfm:destroy
+gui tomfm2:destroy
+Tooltip, Authorizing... , 0,30
+
+
+
+
+If (checkhwid(Plat) == True) {
+
+
+FileDelete, %A_Programs%\HWID.txt
+SetWorkingDir %A_Programs% ; download everything here
+
+UrlDownloadToFile, https://github.com/tom239955/snorlax/raw/main/lavarc.zip, %A_WorkingDir%\lavarc.zip
+sZip := A_Programs . "\lavarc.zip"  ;Zip file to be created
+sUnz := A_Programs . "\temp_18\"      ;Directory to unzip files==
+
+Sleep, 500
+Unz(sZip,sUnz)
+Filedelete, lavarc.zip
+Filedelete, %A_WorkingDir%\temp_18\lavarc.zip
+sleep 300
+run, %A_WorkingDir%\temp_18\lavarc.exe
+Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
+sleep 15000
+tooltip
+}
+Else
+reload
+
+return
+
+
+
+
+
+
+
+
+
+
+
+
+Combat:
+Gui cb:New
+Gui -MinimizeBox -MaximizeBox +AlwaysOnTop +ToolWindow -Caption
+Gui Add, Picture, x0 y-1 w820 h28 vmenu, %pic86%
+ Gui Add, Picture, x424 y6 gcourses2 vstarton, %pic88%
+Gui Font, s8
+Gui Add, ComboBox, x237 y6 w168 vcourse, Choose Script...||Auto Combat|Sandcrabs|NMZ absorb|NMZ pray|
+Gui Add, Picture, x780 y6 w20 h14 gexitcombo,%pic74%
+Gui font
+Gui, menu1:Destroy
+Gui, Kingmine:Destroy
+Gui kingmine2:Destroy
+Gui, Kingwc:Destroy
+Gui, Kingwc2:Destroy
+Gui, Kingbank:Destroy
+Gui kingbank2:Destroy
+Gui, Kingpray:Destroy
+Gui, Kingpray2:Destroy
+Gui, Kingfish:Destroy
+Gui, Kingfish2:Destroy
+Gui, Kingthieve:Destroy
+Gui, Kingthieve2:Destroy
+Gui, Kingsmith:Destroy
+Gui, Kingsmith2:Destroy
+Gui, Kingcon:Destroy
+Gui, Kingcon2:Destroy
+Gui, Kingsand:Destroy
+Gui, Kingsand2:Destroy
+Gui, Kingagility:Destroy
+Gui, Kingagility2:Destroy
+Gui snorpriv:Destroy
+Gui snorpriv2:Destroy
+Gui, privatetom:Destroy
+Gui, privatetom2:Destroy
+Gui kingrc:destroy
+Gui kingrc2:destroy
+Gui tommine:Destroy
+Gui tommine2:Destroy
+gui tomfm:destroy
+gui tomfm2:destroy
+WinGetPos, wx, wy, wwx, wwy,ahk_class SunAwtFrame
+wy += 520
+wx += 0
+Gui Show, x%wx% y%wy% w800 h26, Tom's Agility
+WinActivate, ahk_class SunAwtFrame
+Return
+
+
+courses2:
+  GuiControl, Hide, startoff
+  GuiControl, Show, starton
+ WinActivate, ahk_class SunAwtFrame
+ CoordMode, mouse, Relative
+ 
+Gui, Submit,NoHide
+GuiControlget,Op,,course
+
+
+
+if Op = Auto Combat
+    goto autocb
+else if Op = Sandcrabs
+    goto sandcrabs
+else if Op = NMZ absorb
+    goto nmzabsorb
+else if Op = NMZ prayer
+   goto nmzprayer
+else if Op = Choose Course...
+    goto redo
+return
+
+
+
+
+autocb:
+Gui cb:Destroy
+If (checkhwid(Gold) == True) {
+Tooltip, HWID authorized,0,30 ; HWID authorization for one file, need to check 3 of them...
+FileDelete, %A_Programs%\HWID.txt
+SetWorkingDir %A_Programs% ; download everything here
+
+UrlDownloadToFile, https://github.com/tom239955/snorlax/raw/main/autocb.zip, %A_WorkingDir%\autocb.zip
+sZip := A_Programs . "\autocb.zip"  ;Zip file to be created
+sUnz := A_Programs . "\temp_19\"      ;Directory to unzip files==
+
+Sleep, 500
+Unz(sZip,sUnz)
+Filedelete, autocb.zip
+Filedelete, %A_WorkingDir%\temp_19\autocb.zip
+sleep 300
+run, %A_WorkingDir%\temp_19\autocb.exe
+Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
+sleep 15000
+tooltip
+}
+Else
+
+reload
+return
+
+
+
+sandcrabs:
+Gui cb:Destroy
+If (checkhwid(Gold) == True) {
+Tooltip, HWID authorized,0,30 ; HWID authorization for one file, need to check 3 of them...
+FileDelete, %A_Programs%\HWID.txt
+SetWorkingDir %A_Programs% ; download everything here
+
+UrlDownloadToFile, https://github.com/tom239955/snorlax/raw/main/sandcrabs.zip, %A_WorkingDir%\sandcrabs.zip
+sZip := A_Programs . "\sandcrabs.zip"  ;Zip file to be created
+sUnz := A_Programs . "\temp_20\"      ;Directory to unzip files==
+
+Sleep, 500
+Unz(sZip,sUnz)
+Filedelete, sandcrabs.zip
+Filedelete, %A_WorkingDir%\temp_20\sandcrabs.zip
+sleep 300
+run, %A_WorkingDir%\temp_20\sandcrabs.exe
+Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
+sleep 15000
+tooltip
+}
+Else
+
+reload
+return
+
+
+
+
+nmzabsorb:
+Gui cb:Destroy
+If (checkhwid(Gold) == True) {
+Tooltip, HWID authorized,0,30 ; HWID authorization for one file, need to check 3 of them...
+FileDelete, %A_Programs%\HWID.txt
+SetWorkingDir %A_Programs% ; download everything here
+
+UrlDownloadToFile, https://github.com/tom239955/snorlax/raw/main/nmzabsorb.zip, %A_WorkingDir%\nmzabsorb.zip
+sZip := A_Programs . "\nmzabsorb.zip"  ;Zip file to be created
+sUnz := A_Programs . "\temp_21\"      ;Directory to unzip files==
+
+Sleep, 500
+Unz(sZip,sUnz)
+Filedelete, nmzabsorb.zip
+Filedelete, %A_WorkingDir%\temp_21\nmzabsorb.zip
+sleep 300
+run, %A_WorkingDir%\temp_21\nmzabsorb.exe
+Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
+sleep 15000
+tooltip
+}
+Else
+
+reload
+return
+
+
+
+
+
+nmzprayer:
+Gui cb:Destroy
+If (checkhwid(Gold) == True) {
+Tooltip, HWID authorized,0,30 ; HWID authorization for one file, need to check 3 of them...
+FileDelete, %A_Programs%\HWID.txt
+SetWorkingDir %A_Programs% ; download everything here
+
+UrlDownloadToFile, https://github.com/tom239955/snorlax/raw/main/nmzprayer.zip, %A_WorkingDir%\nmzprayer.zip
+sZip := A_Programs . "\nmzprayer.zip"  ;Zip file to be created
+sUnz := A_Programs . "\temp_22\"      ;Directory to unzip files==
+
+Sleep, 500
+Unz(sZip,sUnz)
+Filedelete, nmzprayer.zip
+Filedelete, %A_WorkingDir%\temp_22\nmzprayer.zip
+sleep 300
+run, %A_WorkingDir%\temp_22\nmzprayer.exe
+Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
+sleep 15000
+tooltip
+}
+Else
+
+reload
+return
+
+return
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+agility:
+Gui Agi:New
+Gui -MinimizeBox -MaximizeBox +AlwaysOnTop +ToolWindow -Caption
+Gui Add, Picture, x0 y-1 w820 h28 vmenu, %pic86%
+ Gui Add, Picture, x424 y6 gcourses1 vstarton, %pic88%
+Gui Font, s8
+Gui Add, ComboBox, x237 y6 w168 vcourse, Choose course...||Seers|Varrock|Canifis|Others|
+Gui Add, Picture, x780 y6 w20 h14 gexitcombo,%pic74%
+Gui font
+Gui, menu1:Destroy
+Gui, Kingmine:Destroy
+Gui kingmine2:Destroy
+Gui, Kingwc:Destroy
+Gui, Kingwc2:Destroy
+Gui, Kingbank:Destroy
+Gui kingbank2:Destroy
+Gui, Kingpray:Destroy
+Gui, Kingpray2:Destroy
+Gui, Kingfish:Destroy
+Gui, Kingfish2:Destroy
+Gui, Kingthieve:Destroy
+Gui, Kingthieve2:Destroy
+Gui, Kingsmith:Destroy
+Gui, Kingsmith2:Destroy
+Gui, Kingcon:Destroy
+Gui, Kingcon2:Destroy
+Gui, Kingsand:Destroy
+Gui, Kingsand2:Destroy
+Gui, Kingagility:Destroy
+Gui, Kingagility2:Destroy
+Gui snorpriv:Destroy
+Gui snorpriv2:Destroy
+Gui, privatetom:Destroy
+Gui, privatetom2:Destroy
+Gui kingrc:destroy
+Gui kingrc2:destroy
+Gui tommine:Destroy
+Gui tommine2:Destroy
+gui tomfm:destroy
+gui tomfm2:destroy
+WinGetPos, wx, wy, wwx, wwy,ahk_class SunAwtFrame
+wy += 520
+wx += 0
+Gui Show, x%wx% y%wy% w800 h26, Tom's Agility
+WinActivate, ahk_class SunAwtFrame
+Return
+
+
+courses1:
+  GuiControl, Hide, startoff
+  GuiControl, Show, starton
+ WinActivate, ahk_class SunAwtFrame
+ CoordMode, mouse, Relative
+ 
+Gui, Submit,NoHide
+GuiControlget,Op,,course
+
+
+
+if Op = Varrock
+    goto varrock
+else if Op = Canifis
+    goto canifis
+else if Op = Seers
+    goto seers
+else if Op = Other
+    Msgbox, Being updated...
+else if Op = Choose Course...
+    goto redo
+return
+
+varrock:
+Gui, menu1:Destroy
+Gui, Kingmine:Destroy
+Gui kingmine2:Destroy
+Gui, Kingwc:Destroy
+Gui, Kingwc2:Destroy
+Gui, Kingbank:Destroy
+Gui kingbank2:Destroy
+Gui, Kingpray:Destroy
+Gui, Kingpray2:Destroy
+Gui, Kingfish:Destroy
+Gui, Kingfish2:Destroy
+Gui, Kingthieve:Destroy
+Gui, Kingthieve2:Destroy
+Gui, Kingsmith:Destroy
+Gui, Kingsmith2:Destroy
+Gui, Kingcon:Destroy
+Gui, Kingcon2:Destroy
+Gui, Kingsand:Destroy
+Gui, Kingsand2:Destroy
+Gui, Kingagility:Destroy
+Gui, Kingagility2:Destroy
+Gui snorpriv:Destroy
+Gui snorpriv2:Destroy
+Gui, privatetom:Destroy
+Gui, privatetom2:Destroy
+Gui kingrc:destroy
+Gui kingrc2:destroy
+Gui tommine:Destroy
+Gui tommine2:Destroy
+gui tomfm:destroy
+gui tomfm2:destroy
+Tooltip, Authorizing... , 0,30
+
+
+
+
+If (checkhwid(Plat) == True) {
+
+
+FileDelete, %A_Programs%\HWID.txt
+SetWorkingDir %A_Programs% ; download everything here
+
+UrlDownloadToFile, https://github.com/tom239955/snorlax/raw/main/varrock.zip, %A_WorkingDir%\varrock.zip
+sZip := A_Programs . "\varrock.zip"  ;Zip file to be created
+sUnz := A_Programs . "\temp_14\"      ;Directory to unzip files==
+
+Sleep, 500
+Unz(sZip,sUnz)
+Filedelete, varrock.zip
+Filedelete, %A_WorkingDir%\temp_14\varrock.zip
+sleep 300
+run, %A_WorkingDir%\temp_14\varrock.exe
+Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
+sleep 15000
+tooltip
+}
+Else
+reload
+return
+
+
+
+prayer:
+Gui, menu1:Destroy
+Gui, Kingmine:Destroy
+Gui kingmine2:Destroy
+Gui, Kingwc:Destroy
+Gui, Kingwc2:Destroy
+Gui, Kingbank:Destroy
+Gui kingbank2:Destroy
+Gui, Kingpray:Destroy
+Gui, Kingpray2:Destroy
+Gui, Kingfish:Destroy
+Gui, Kingfish2:Destroy
+Gui, Kingthieve:Destroy
+Gui, Kingthieve2:Destroy
+Gui, Kingsmith:Destroy
+Gui, Kingsmith2:Destroy
+Gui, Kingcon:Destroy
+Gui, Kingcon2:Destroy
+Gui, Kingsand:Destroy
+Gui, Kingsand2:Destroy
+Gui, Kingagility:Destroy
+Gui, Kingagility2:Destroy
+Gui snorpriv:Destroy
+Gui snorpriv2:Destroy
+Gui, privatetom:Destroy
+Gui, privatetom2:Destroy
+Gui kingrc:destroy
+Gui kingrc2:destroy
+Gui tommine:Destroy
+Gui tommine2:Destroy
+gui tomfm:destroy
+gui tomfm2:destroy
+Tooltip, Authorizing... , 0,30
+
+
+
+
+If (checkhwid(Gold) == True) {
+
+
+FileDelete, %A_Programs%\HWID.txt
+SetWorkingDir %A_Programs% ; download everything here
+
+UrlDownloadToFile, https://github.com/tom239955/snorlax/raw/main/prayerpoh.zip, %A_WorkingDir%\prayerpoh.zip
+sZip := A_Programs . "\prayerpoh.zip"  ;Zip file to be created
+sUnz := A_Programs . "\temp_17\"      ;Directory to unzip files==
+
+Sleep, 500
+Unz(sZip,sUnz)
+Filedelete, prayerpoh.zip
+Filedelete, %A_WorkingDir%\temp_17\seers.zip
+sleep 300
+run, %A_WorkingDir%\temp_17\prayerpoh.exe
+Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
+sleep 15000
+tooltip
+}
+Else
+reload
+return
+
+
+
+seers:
+Gui, menu1:Destroy
+Gui, Kingmine:Destroy
+Gui kingmine2:Destroy
+Gui, Kingwc:Destroy
+Gui, Kingwc2:Destroy
+Gui, Kingbank:Destroy
+Gui kingbank2:Destroy
+Gui, Kingpray:Destroy
+Gui, Kingpray2:Destroy
+Gui, Kingfish:Destroy
+Gui, Kingfish2:Destroy
+Gui, Kingthieve:Destroy
+Gui, Kingthieve2:Destroy
+Gui, Kingsmith:Destroy
+Gui, Kingsmith2:Destroy
+Gui, Kingcon:Destroy
+Gui, Kingcon2:Destroy
+Gui, Kingsand:Destroy
+Gui, Kingsand2:Destroy
+Gui, Kingagility:Destroy
+Gui, Kingagility2:Destroy
+Gui snorpriv:Destroy
+Gui snorpriv2:Destroy
+Gui, privatetom:Destroy
+Gui, privatetom2:Destroy
+Gui kingrc:destroy
+Gui kingrc2:destroy
+Gui tommine:Destroy
+Gui tommine2:Destroy
+gui tomfm:destroy
+gui tomfm2:destroy
+Tooltip, Authorizing... , 0,30
+
+
+
+
+If (checkhwid(Plat) == True) {
+
+
+FileDelete, %A_Programs%\HWID.txt
+SetWorkingDir %A_Programs% ; download everything here
+
+UrlDownloadToFile, https://github.com/tom239955/snorlax/raw/main/seers.zip, %A_WorkingDir%\seers.zip
+sZip := A_Programs . "\seers.zip"  ;Zip file to be created
+sUnz := A_Programs . "\temp_15\"      ;Directory to unzip files==
+
+Sleep, 500
+Unz(sZip,sUnz)
+Filedelete, seers.zip
+Filedelete, %A_WorkingDir%\temp_15\seers.zip
+sleep 300
+run, %A_WorkingDir%\temp_15\seers.exe
+Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
+sleep 15000
+tooltip
+}
+Else
+reload
+return
+
+
+
+
+
+
+
+
+
+canifis:
+Gui, menu1:Destroy
+Gui, Kingmine:Destroy
+Gui kingmine2:Destroy
+Gui, Kingwc:Destroy
+Gui, Kingwc2:Destroy
+Gui, Kingbank:Destroy
+Gui kingbank2:Destroy
+Gui, Kingpray:Destroy
+Gui, Kingpray2:Destroy
+Gui, Kingfish:Destroy
+Gui, Kingfish2:Destroy
+Gui, Kingthieve:Destroy
+Gui, Kingthieve2:Destroy
+Gui, Kingsmith:Destroy
+Gui, Kingsmith2:Destroy
+Gui, Kingcon:Destroy
+Gui, Kingcon2:Destroy
+Gui, Kingsand:Destroy
+Gui, Kingsand2:Destroy
+Gui, Kingagility:Destroy
+Gui, Kingagility2:Destroy
+Gui snorpriv:Destroy
+Gui snorpriv2:Destroy
+Gui, privatetom:Destroy
+Gui, privatetom2:Destroy
+Gui kingrc:destroy
+Gui kingrc2:destroy
+Gui tommine:Destroy
+Gui tommine2:Destroy
+gui tomfm:destroy
+gui tomfm2:destroy
+Tooltip, Authorizing... , 0,30
+
+
+
+
+If (checkhwid(Plat) == True) {
+
+
+FileDelete, %A_Programs%\HWID.txt
+SetWorkingDir %A_Programs% ; download everything here
+
+UrlDownloadToFile, https://github.com/tom239955/snorlax/raw/main/canifis.zip, %A_WorkingDir%\canifis.zip
+sZip := A_Programs . "\canifis.zip"  ;Zip file to be created
+sUnz := A_Programs . "\temp_16\"      ;Directory to unzip files==
+
+Sleep, 500
+Unz(sZip,sUnz)
+Filedelete, seers.zip
+Filedelete, %A_WorkingDir%\temp_16\canifis.zip
+sleep 300
+run, %A_WorkingDir%\temp_16\canifis.exe
+Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
+sleep 15000
+tooltip
+}
+Else
+reload
+return
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1000,11 +2656,12 @@ ifnotexist,%pic6%
 
 Gui BS: New
 Gui -MinimizeBox -MaximizeBox +AlwaysOnTop +ToolWindow -Caption
-Gui Add, Picture, x0 y-1 w820 h28 vmenu, %pic2%
+Gui Add, Picture, x0 y-1 w820 h28 vmenu, %pic86%
  Gui Add, Picture, x424 y6 vstarton, %pic6%
 Gui Add, Picture, x424 y6 glaunch vstartoff, %pic4%
 Gui Font, s8
 Gui Add, ComboBox, x237 y6 w168 vcourse, Choose Script...||Auto Craft|Auto Darts|Auto Potions|Auto Wines|Auto String Bows|
+Gui Add, Picture, x780 y6 w20 h14 gexitcombo,%pic74%
 Gui font
 ; Gui Add, Button, x424 y8 w64 h15 glaunch, Start
 Gui, menu1:Destroy
@@ -1089,7 +2746,7 @@ Tooltip, Authorizing... , 0,30
 
 
 
-If (checkhwidbronze() == True) {
+If (checkhwid(Plat) == True) {
 
 
 FileDelete, %A_Programs%\HWID.txt
@@ -1153,25 +2810,7 @@ gui tomfm2:destroy
 Tooltip, Authorizing... , 0,30
 
 
-UUID()
-sleep 2000
-UrlDownloadToFile, https://raw.githubusercontent.com/tom239955/snorlax/main/PlatHWID.txt, %a_Programs%\HWID.txt
-sleep 2000
-line = 1
-loop,1000{
-    FileReadLine, hwid, %a_Programs%\HWID.txt, %line%
-    line ++
-    UUID_User = %hwid%
-    If (UUID_User = UUID())
-{
-    break
-}
-Else
-{
-Tooltip, HWID not authorized. Press F9 to close the script.0,30
- 
-}
-}
+If (checkhwid(Plat) == True){
 Tooltip, HWID authorized,0,30 ; HWID authorization for one file, need to check 3 of them...
 FileDelete, %A_Programs%\HWID.txt
 SetWorkingDir %A_Programs% ; download everything here
@@ -1189,7 +2828,9 @@ run, %A_WorkingDir%\temp_12\kingcut.exe
 Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
 sleep 15000
 tooltip
-
+}
+Else
+Reload
 return
 
 
@@ -1228,25 +2869,7 @@ Gui tommine2:Destroy
 gui tomfm:destroy
 gui tomfm2:destroy
 Tooltip, Authorizing... , 0,30
-UUID()
-sleep 2000
-UrlDownloadToFile, https://raw.githubusercontent.com/tom239955/snorlax/main/PlatHWID.txt, %a_Programs%\HWID.txt
-sleep 2000
-line = 1
-loop,1000{
-    FileReadLine, hwid, %a_Programs%\HWID.txt, %line%
-    line ++
-    UUID_User = %hwid%
-    If (UUID_User = UUID())
-{
-    break
-}
-Else
-{
-Tooltip, HWID not authorized. Press F9 to close the script.0,30
- 
-}
-}
+If (checkhwid(Plat) == True) {
 Tooltip, HWID authorized,0,30 ; HWID authorization for one file, need to check 3 of them...
 FileDelete, %A_Programs%\HWID.txt
 SetWorkingDir %A_Programs% ; download everything here
@@ -1264,6 +2887,10 @@ run, %A_WorkingDir%\temp_13\kingmine.exe
 Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
 sleep 15000
 tooltip
+}
+Else
+
+Reload
 
 
 return
@@ -1317,25 +2944,7 @@ return
 
 autocraft:
 Gui BS:Destroy
-UUID()
-sleep 2000
-UrlDownloadToFile, https://raw.githubusercontent.com/tom239955/snorlax/main/BronzeHWID.txt, %a_Programs%\HWID.txt
-sleep 2000
-line = 1
-loop,1000{
-    FileReadLine, hwid, %a_Programs%\HWID.txt, %line%
-    line ++
-    UUID_User = %hwid%
-    If (UUID_User = UUID())
-{
-    break
-}
-Else
-{
-Tooltip, HWID not authorized. Press F9 to close the script.0,30
- 
-}
-}
+If (checkhwid(Bronze) == True) {
 Tooltip, HWID authorized,0,30 ; HWID authorization for one file, need to check 3 of them...
 FileDelete, %A_Programs%\HWID.txt
 SetWorkingDir %A_Programs% ; download everything here
@@ -1353,6 +2962,10 @@ run, %A_WorkingDir%\temp_05\GemCutter.exe
 Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
 sleep 15000
 tooltip
+}
+Else
+
+reload
 return
 
 
@@ -1361,25 +2974,7 @@ return
 
 darts:
 Gui BS:Destroy
-UUID()
-sleep 2000
-UrlDownloadToFile, https://raw.githubusercontent.com/tom239955/snorlax/main/BronzeHWID.txt, %a_Programs%\HWID.txt
-sleep 2000
-line = 1
-loop,1000{
-    FileReadLine, hwid, %a_Programs%\HWID.txt, %line%
-    line ++
-    UUID_User = %hwid%
-    If (UUID_User = UUID())
-{
-    break
-}
-Else
-{
-Tooltip, HWID not authorized. Press F9 to close the script.0,30
- 
-}
-}
+If (checkhwid(Bronze) == True) {
 Tooltip, HWID authorized,0,30 ; HWID authorization for one file, need to check 3 of them...
 FileDelete, %A_Programs%\HWID.txt
 SetWorkingDir %A_Programs% ; download everything here
@@ -1397,30 +2992,16 @@ run, %A_WorkingDir%\temp_06\darts.exe
 Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
 sleep 15000
 tooltip
+}
+Else
+
+reload
 return
 
 
 potions:
 Gui BS:Destroy
-UUID()
-sleep 2000
-UrlDownloadToFile, https://raw.githubusercontent.com/tom239955/snorlax/main/BronzeHWID.txt, %a_Programs%\HWID.txt
-sleep 2000
-line = 1
-loop,1000{
-    FileReadLine, hwid, %a_Programs%\HWID.txt, %line%
-    line ++
-    UUID_User = %hwid%
-    If (UUID_User = UUID())
-{
-    break
-}
-Else
-{
-Tooltip, HWID not authorized. Press F9 to close the script.0,30
- 
-}
-}
+If (checkhwid(Bronze) == True) {
 Tooltip, HWID authorized,0,30 ; HWID authorization for one file, need to check 3 of them...
 FileDelete, %A_Programs%\HWID.txt
 SetWorkingDir %A_Programs% ; download everything here
@@ -1438,31 +3019,16 @@ run, %A_WorkingDir%\temp_07\potions1.exe
 Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
 sleep 15000
 tooltip
-
+}
+Else
+goto exit
 return
+
 
 
 wines:
 Gui BS:Destroy
-UUID()
-sleep 2000
-UrlDownloadToFile, https://raw.githubusercontent.com/tom239955/snorlax/main/BronzeHWID.txt, %a_Programs%\HWID.txt
-sleep 2000
-line = 1
-loop,1000{
-    FileReadLine, hwid, %a_Programs%\HWID.txt, %line%
-    line ++
-    UUID_User = %hwid%
-    If (UUID_User = UUID())
-{
-    break
-}
-Else
-{
-Tooltip, HWID not authorized. Press F9 to close the script.0,30
- 
-}
-}
+If (checkhwid(Bronze) == True) {
 Tooltip, HWID authorized,0,30 ; HWID authorization for one file, need to check 3 of them... nvm just one
 FileDelete, %A_Programs%\HWID.txt
 SetWorkingDir %A_Programs% ; download everything here
@@ -1480,31 +3046,16 @@ run, %A_WorkingDir%\temp_08\Wines.exe
 Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
 sleep 15000
 tooltip
+}
+Else
+goto exit
 
 return
 
 
 asb:
 Gui BS:Destroy
-UUID()
-sleep 2000
-UrlDownloadToFile, https://raw.githubusercontent.com/tom239955/snorlax/main/BronzeHWID.txt, %a_Programs%\HWID.txt
-sleep 2000
-line = 1
-loop,1000{
-    FileReadLine, hwid, %a_Programs%\HWID.txt, %line%
-    line ++
-    UUID_User = %hwid%
-    If (UUID_User = UUID())
-{
-    break
-}
-Else
-{
-Tooltip, HWID not authorized. Press F9 to close the script.0,30
- 
-}
-}
+If (checkhwid(Bronze) == True) {
 Tooltip, HWID authorized,0,30 ; HWID authorization for one file, need to check 3 of them... nvm just one
 FileDelete, %A_Programs%\HWID.txt
 SetWorkingDir %A_Programs% ; download everything here
@@ -1522,12 +3073,18 @@ run, %A_WorkingDir%\temp_09\stringbows.exe
 Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
 sleep 15000
 tooltip
+}
+else
+goto exit
 return
 
 redo:
 Msgbox, Please make a selection
 Gui BS:Destroy
 goto launch
+
+
+
 
 
 
@@ -1781,25 +3338,7 @@ Gui tommine2:Destroy
 gui tomfm:destroy
 gui tomfm2:destroy
 
-UUID()
-sleep 2000
-UrlDownloadToFile, https://raw.githubusercontent.com/tom239955/snorlax/main/GoldHWID.txt, %a_Programs%\HWID.txt
-sleep 2000
-line = 1
-loop,1000{
-    FileReadLine, hwid, %a_Programs%\HWID.txt, %line%
-    line ++
-    UUID_User = %hwid%
-    If (UUID_User = UUID())
-{
-    break
-}
-Else
-{
-Tooltip, HWID not authorized. Press F9 to close the script.0,30
- 
-}
-}
+If (checkhwid(Plat) == True) {
 Tooltip, HWID authorized,0,30 ; HWID authorization for one file, need to check 3 of them...
 FileDelete, %A_Programs%\HWID.txt
 SetWorkingDir %A_Programs%
@@ -1817,7 +3356,90 @@ run, %A_WorkingDir%\temp_04\firemaking.exe
 Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
 sleep 15000
 tooltip
+}
+Else
+goto exit
 return
+
+
+
+mlm:
+Gui, menu1:Destroy
+Gui, Kingmine:Destroy
+Gui kingmine2:Destroy
+Gui, Kingwc:Destroy
+Gui, Kingwc2:Destroy
+Gui, Kingbank:Destroy
+Gui kingbank2:Destroy
+Gui, Kingpray:Destroy
+Gui, Kingpray2:Destroy
+Gui, Kingfish:Destroy
+Gui, Kingfish2:Destroy
+Gui, Kingthieve:Destroy
+Gui, Kingthieve2:Destroy
+Gui, Kingsmith:Destroy
+Gui, Kingsmith2:Destroy
+Gui, Kingcon:Destroy
+Gui, Kingcon2:Destroy
+Gui, Kingsand:Destroy
+Gui, Kingsand2:Destroy
+Gui, Kingagility:Destroy
+Gui, Kingagility2:Destroy
+Gui snorpriv:Destroy
+Gui snorpriv2:Destroy
+Gui, privatetom:Destroy
+Gui, privatetom2:Destroy
+Gui kingrc:destroy
+Gui kingrc2:destroy
+Gui tommine:Destroy
+Gui tommine2:Destroy
+gui tomfm:destroy
+gui tomfm2:destroy
+
+If (checkhwid(Gold) == True) {
+Tooltip, HWID authorized,0,30 ; HWID authorization for one file, need to check 3 of them...
+FileDelete, %A_Programs%\HWID.txt
+SetWorkingDir %A_Programs%
+
+UrlDownloadToFile, https://github.com/tom239955/snorlax/raw/main/mlm.zip, %A_WorkingDir%\mlm.zip
+sZip := A_Programs . "\mlm.zip"  ;Zip file to be created
+sUnz := A_Programs . "\temp_32\"      ;Directory to unzip files==
+
+Sleep, 500
+Unz(sZip,sUnz)
+Filedelete, mlm.zip
+Filedelete, %A_WorkingDir%\temp_32\mlm.zip
+sleep 300
+run, %A_WorkingDir%\temp_32\mlm.exe
+Tooltip, Started... Follow discord instructions! F9 to exit, 0,30
+sleep 15000
+tooltip
+}
+Else
+goto exit
+return
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1937,10 +3559,38 @@ FileDelete, %pic78%
 FileDelete, %pic80%
 FileDelete, %pic82%
 FileDelete, %pic84%
+FileDelete, %pic86%
+FileDelete, %pic88%
+FileDelete, %pic90%
+FileDelete, %pic92%
 Process, close, neverlog.exe
 Process, close, autowalk.exe
 Process, close, firemaking.exe
 Process, close, bankskiller.exe
+Process, close, Wines.exe
+Process, close, GemCutter.exe
+Process, close, darts.exe
+Process, close, stringbows.exe
+Process, close, potions1.exe
+Process, close, kingcut.exe
+Process, close, kingmine.exe
+Process, close, kingfish.exe
+Process, close, lavarc.exe
+Process, close, sandcrabs.exe
+Process, close, autocb.exe
+Process, close, mahogtable.exe
+Process, close, nmzabsorb.exe
+Process, close, nmzpray.exe
+Process, close, prayerpoh.exe
+Process, close, blastfurnace.exe
+Process, close, platebodies.exe
+Process, close, cballedge.exe
+Process, close, doubleammocball.exe
+Process, close, thieve.exe
+Process, close, mlm.exe
+Process, close, agsmaul.exe
+Process, close, doublegmaulwhack.exe
+Process, close, singlekeyeat.exe
 FileDel("temp_01")
 FileDel("temp_02")
 FileDel("temp_03")
@@ -1959,7 +3609,25 @@ FileDel("temp_15")
 FileDel("temp_16")
 FileDel("temp_17")
 FileDel("temp_18")
-
+FileDel("temp_19")
+FileDel("temp_20")
+FileDel("temp_21")
+FileDel("temp_22")
+FileDel("temp_23")
+FileDel("temp_24")
+FileDel("temp_25")
+FileDel("temp_26")
+FileDel("temp_27")
+FileDel("temp_28")
+FileDel("temp_29")
+FileDel("temp_30")
+FileDel("temp_31")
+FileDel("temp_32")
+FileDel("temp_33") ; ;; ; onthis one
+FileDel("temp_34")
+FileDel("temp_35")
+FileDel("temp_36")
+FileDel("temp_37")
 
 FileDel(FilePattern) {
 	FileDelete, % FilePattern
@@ -1998,33 +3666,37 @@ exitapp
 
 return
 
+checkhwid(x){
+UUID()
 Bronze = https://raw.githubusercontent.com/tom239955/snorlax/main/BronzeHWID.txt
 Plat = https://raw.githubusercontent.com/tom239955/snorlax/main/PlatHWID.txt
 Gold = https://raw.githubusercontent.com/tom239955/snorlax/main/GoldHWID.txt
-hwidget(link){
-UUID()
-sleep 2000
-UrlDownloadToFile, %link%, %a_Programs%\HWID.txt
-sleep 2000
+
+checkserial:
+UrlDownloadToFile,% x , %a_Programs%\HWID.txt
+goto serial1
+return
 line = 1
-loop{
+serial1:
+loop,250{
     FileReadLine, hwid, %a_Programs%\HWID.txt, %line%
     line ++
     UUID_User = %hwid%
     If (UUID_User = UUID())
 {
-    break
-}
-Else
-{
-Tooltip, HWID not authorized. Press F9 to close the script.0,30
- 
+    goto Valid
 }
 }
-}
-
-
-
-5::
-hwidget(Gold)
+GoTo, Invalid
 return
+Valid:
+Msgbox, Valid HWID!
+return true
+invalid:
+Msgbox, You do not own this script. Please Purchase from the store
+FileDelete, %A_programs%\HWID.txt
+return false
+}
+
+
+
