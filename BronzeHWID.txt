@@ -10,7 +10,6 @@ AEE24D56-7FAA-6CE4-2DD8-CBB3FEF36D2D
 00000000-0000-0000-0000-309C23A42A82  ;;These been here forever, maybe forgot to remove? (this message breaks it, wait in discord see if someone reports issue)
 03C00218-044D-052F-A606-170700080009  ;;These been here forever, maybe forgot to remove? (this message breaks it, wait in discord see if someone reports issue)
 EB0A9775-A731-264D-33AD-0C9D92C97076  ;;These been here forever, maybe forgot to remove? (this message breaks it, wait in discord see if someone reports issue)
-9D59A1A8-D166-0000-0000-000000000000
 91F80EB6-3050-4F8C-842F-1B57D58E421B
 22AE6F60-D7DA-11DD-A5D5-2C4D54522C7A
 509B70D0-D239-6A43-ADC4-8038608B4F36
