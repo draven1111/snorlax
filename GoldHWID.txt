@@ -7,28 +7,35 @@ AEE24D56-7FAA-6CE4-2DD8-CBB3FEF36D2D
 0FA33D1F-75CE-F060-5B03-5C76BF953CA4
 ;last one maybe
 
+
+
+
+;;; 31 DAYS
+63EA9189-6568-BE1A-AA91-D8BBC1A23E45
+
+
+
+
+
+;;; 14 DAYS
+
+
+
+
+;;; 7 DAYS
+
 ;;; Gold HWIDS
-00000000-0000-0000-0000-309C23A42A82  ;;These been here forever, maybe forgot to remove? (this message breaks it, wait in discord see if someone reports issue)
-03C00218-044D-052F-A606-170700080009  ;;These been here forever, maybe forgot to remove? (this message breaks it, wait in discord see if someone reports issue)
-EB0A9775-A731-264D-33AD-0C9D92C97076  ;;These been here forever, maybe forgot to remove? (this message breaks it, wait in discord see if someone reports issue)
 91F80EB6-3050-4F8C-842F-1B57D58E421B
 22AE6F60-D7DA-11DD-A5D5-2C4D54522C7A
 2DE12D8B-1D96-E811-80C9-9828A61BE7FB
 509B70D0-D239-6A43-ADC4-8038608B4F36
-
-
 357B07EF-B2F1-EA11-8107-F80DAC7C021C
-
 4C4C4544-0052-5610-8058-B1C04F423132
-
 509B70D0-D239-6A43-ADC4-8038608B4F36
-
 C5B34D56-C686-B7AE-2296-984C9B80B43C
 
 ;;; PLAT HWIDS
 032E02B4-0499-05A2-4206-460700080009
-
-
 
 
 ;;; Bronze HWIDS
